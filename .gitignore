@@ -1,0 +1,17 @@
+*.pyc
+*.pyo
+*~
+
+venv/
+.venv/
+*.pyo
+*~
+
+.vscode
+
+.DS_Store
+._.DS_Store
+
+raw_data
+
+model/
