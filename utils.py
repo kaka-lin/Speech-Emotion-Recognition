@@ -106,6 +106,8 @@ def wav2mfcc(file_path, sr=None, offset=0.0, duration=None, n_mfcc=13, max_lengt
         #print(max_length, mfcc.shape[1])
         pad_width = max_length - mfcc.shape[1]
         mfcc = np.pad(mfcc, pad_width=((0, 0), (0, pad_width)), mode='constant')
+    else:
+        mfcc = mfcc[:, :max_length]
     
     '''
     # plot
